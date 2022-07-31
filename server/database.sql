@@ -1,0 +1,6 @@
+    CREATE DATABASE TODO_LIST
+
+    CREATE TABLE TODO(
+        ID SERIAL PRIMARY KEY,
+        description VARCHAR(255) 
+    );
