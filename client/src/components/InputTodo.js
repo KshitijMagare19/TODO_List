@@ -5,7 +5,7 @@ const InputTodo = () => {
 
     const onSubmitForm = async e => {
         e.preventDefault();
-        //add tast
+        //add task
         try {
             const body = { description };
             const responce = await fetch("http://localhost:5000/todos",{
@@ -14,6 +14,7 @@ const InputTodo = () => {
                 body: JSON.stringify(body)
 
             });
+            window.location = "/";
             console.log(responce);
         } catch (err) {
             console.error(err.message);
@@ -30,7 +31,7 @@ const InputTodo = () => {
                     onChange={e => setDescription(e.target.value)}
                     placeholder="Enter task description" />
 
-                <button className="btn btn-success"> Add</button>
+                <button className="btn btn-success btn-lg ml-5"> Add</button>
             </form>
         </div>
 
