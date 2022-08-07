@@ -31,7 +31,7 @@ const InputTodo = () => {
                     onChange={e => setDescription(e.target.value)}
                     placeholder="Enter task description" />
 
-                <button className="btn btn-success btn-lg ml-5"> Add</button>
+                <button className="btn btn-success btn-lg"> Add </button>
             </form>
         </div>
 
